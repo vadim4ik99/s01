@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Handbook</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Handbook">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+	<h1>Handbook</h1>
+	<div class="firtssection">
+		<div>
+			<div>
+				HTML
+			</div>
+			<div>
+				<a href="#title" >title</a>
+				<a href="#table" >table</a>
+				<a href="#input" >input</a>
+				<a href="#button" >button</a>
+			</div>
+		</div>
+		<div>
+			<div>
+				CSS
+			</div>
+			<div>
+				<a href="#background" >background</a>
+				<a href="#opacity" >opacity</a>
+				<a href="#lh" >line-height</a>
+				<a href="#border" >border</a>
+			</div>
+		</div>
+		<div>
+			<div>
+				Protocol
+			</div>
+			<div>
+				<a href="#hmethod" >HTTP methods</a>
+				<a href="#hstatus" >HTTP status code</a>
+				<a href="#dns" >DNS</a>
+				<a href="#gip" >Google IP</a>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<h2>Html</h2>
+		<div class="grid">
+			<div class="subtopic">
+				<div class="descr">
+					<span class="name-tag">
+						h1
+					</span>
+					<span class="tag-desc">
+						The h1 to h6 tags are used to define HTML headings
+						<a name="title"></a>
+					</span>
+				</div>
+				<div class="code">&lt;h1&gt;Title&lt;/h1&gt;</div>
+				<div class="view"><h1>Title</h1></div>
+			</div>
+			<div class="subtopic">
+				<div class="descr">
+					<span class="name-tag">
+						table
+					</span>
+					<span class="tag-desc">
+						defines an HTML table
+					</span>
+				</div>
+				<div class="code">&lt;table&gt;&lt;/table&gt;</div>
+				<div class="view">
+					<a name="table"></a>
+					<table>
+					<tr>
+						<td>Country</td>
+						<td>Country</td>
+						<td>Country</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+					</tr>
+					</table>
+				</div>
+			</div>
+			<div class="subtopic">
+				<div class="descr">
+					<span class="name-tag">
+						input
+					</span>
+					<span class="tag-desc">
+						Designed to create text fields, various buttons, radio buttons and checkbox
+					</span>
+				</div>
+				<div class="code">&lt;input attributes&gt;</div>
+				<div class="view">
+					<a name="input"></a>
+					<form>
+						<p><b>Your name</b></p>
+						<input type="text">
+						<p><b>Question</b></p>
+						<input type="radio"> answer
+						<input type="radio"> answer
+						<input type="radio"> answer
+					</form>
+				</div>
+			</div>
+			<div class="subtopic">
+				<div class="descr">
+					<span class="name-tag">
+						button
+					</span>
+					<span class="tag-desc">
+						Clickable button.
+					</span>
+				</div>
+				<div class="code">&lt;button&gt;Button&lt;/button&gt;</div>
+				<div class="view">
+					<a name="button"></a>
+					<button>Button</button></div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<h2>CSS</h2>
+		<div class="grid">
+			<div class="subtopic">
+				<div class="descr">
+					<span class="name-tag">
+						background
+					</span>
+					<span class="tag-desc">
+						specifies the background of an element
+					</span>
+				</div>
+				<div class="code">background:[];</div>
+				<div class="view">
+					<a name="background"></a>
+					<div id="background">Text</div>
+				</div>
+			</div>
+			<div class="subtopic">
+				<div class="descr">
+					<span class="name-tag">
+						opacity
+					</span>
+					<span class="tag-desc">
+						specifies the opacity/transparency of an element
+					</span>
+				</div>
+				<div class="code">opacity: 0.8;</div>
+				<div class="view">
+					<div>
+						<a name="opacity"></a>
+						<div ></div>
+						<div id="op8"></div>
+						<div id="op4"></div>
+						<div id="op2"></div>
+					</div>
+				</div>
+			</div>
+			<div class="subtopic">
+				<div class="descr">
+					<span class="name-tag">
+						line-height
+					</span>
+					<span class="tag-desc">
+						specifies the height of a line
+					</span>
+				</div>
+				<div class="code">line-height: 1.5;</div>
+				<div class="view">
+					<div id="lh">
+						<a name="lh"></a>
+						<p>Lorem ipsum dolor.</p>
+						<p>Lorem ipsum dolor.</p>
+					</div>
+				</div>
+			</div>
+			<div class="subtopic">
+				<div class="descr">
+					<span class="name-tag">
+						border
+					</span>
+					<span class="tag-desc">
+						specifies the style of the outline
+					</span>
+				</div>
+				<div class="code">border-bottom: 2px solid #666</div>
+				<div class="view">
+					<a name="border"></a>
+					<div id="border">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<h2>PROTOCOLS</h2>
+		<div class="grid protocol">
+			<div class="subtopic">
+				<div class="descr">
+					<span class="name-tag">HTTP methods</span>
+				</div>
+				<div class="fulldescr">
+					<a name="hmethod"></a>
+					<p>
+						GET - use this type of requests to retrieve resource 1xx: Informational
+representation/information only — and not to modify it in any way
+					</p>
+					<p>
+						POST - used to create a new resource into the collection of resourc
+					</p>
+
+					<p>
+						PUT - use it primarily to update existing resource (if the resource does not exist then API may decide to create a new resource or not)
+					</p>
+					<p>
+						DELETE - used to delete resources (identified by the Request-URI)
+					</p>
+					<p>
+						PATCH - HTTP PATCH requests are to make partial update on
+					</p>
+				</div>
+			</div>
+			
+			<div class="subtopic">
+				<div class="descr">
+					<span class="name-tag">HTTP status code</span>
+				</div>
+				<div class="fulldescr">
+					<a name="hstatus"></a>
+					<p>
+						1xx: Informational<br> 
+						example: 100 Continue
+					</p>
+					<p>
+						2xx: Success<br>
+						example: 201 Сreated
+					</p>
+
+					<p>
+						3xx: Redirection<br> 
+						example: 301 Moved Permanently
+					</p>
+					<p>
+						4xx: Client Error<br> 
+						example: 404 Not Found
+					</p>
+					<p>
+						5xx: Server Error<br> 
+						example: 500 Internal Server Error
+					</p>
+				</div>
+			</div>
+			
+			<div class="subtopic">
+				<div class="descr">
+					<span class="name-tag">DNS</span>
+				</div>
+				<div class="fulldescr">
+					<a name="dns"></a>
+					<p>
+						GET - use this type of requests to retrieve resource 1xx: Informational
+representation/information only — and not to modify it in any way
+					</p>
+					<p>
+						POST - used to create a new resource into the collection of resourc
+					</p>
+
+					<p>
+						PUT - use it primarily to update existing resource (if the resource does not exist then API may decide to create a new resource or not)
+					</p>
+					<p>
+						DELETE - used to delete resources (identified by the Request-URI)
+					</p>
+					<p>
+						PATCH - HTTP PATCH requests are to make partial update on
+					</p>
+				</div>
+			</div>
+			
+			<div class="subtopic">
+				<div class="descr">
+					<span class="name-tag">Google IP</span>
+				</div>
+				<div class="fulldescr">
+				<a name="gip"></a>
+					<p>
+						GET - use this type of requests to retrieve resource 1xx: Informational
+representation/information only — and not to modify it in any way
+					</p>
+					<p>
+						POST - used to create a new resource into the collection of resourc
+					</p>
+
+					<p>
+						PUT - use it primarily to update existing resource (if the resource does not exist then API may decide to create a new resource or not)
+					</p>
+					<p>
+						DELETE - used to delete resources (identified by the Request-URI)
+					</p>
+					<p>
+						PATCH - HTTP PATCH requests are to make partial update on
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>

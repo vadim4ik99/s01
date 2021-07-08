@@ -1,0 +1,11 @@
+.grid {
+	display: grid;
+	grid-template-columns: repeat(6, 50px);
+	grid-template-rows: repeat(5, 1fr);
+	grid-auto-flow: column;	
+}
+
+.image_gauntel:hover + .grid>div:nth-child(odd) {
+	
+	visibility: hidden;	
+}

@@ -1,0 +1,87 @@
+h1, h2 {
+	text-align: center;
+}
+
+body {
+	background-color: gold;
+}
+
+	.grid {
+		display: grid;
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+	}
+
+	.subtopic {
+		background-color: #D3D3D3;
+		display: grid;
+		grid-template-rows: repeat(25%,25%,50%);
+		padding: 10px;
+		font-size: 21px;
+	}
+	.name-tag {
+		display: block;
+		font-weight: 700;
+	}
+
+	.tag-desc {
+		padding-top: 10px;
+		display: block;
+	}
+	#background {
+		background-color: red;
+		height: 50px;
+	}
+	#lh {
+		line-height: 1.5;
+	}
+	#border {
+		width: 50px;
+		height: 50px;
+		background-color: white;
+		border-bottom: 2px solid black;
+	}
+	.view>div>div {
+		background-color: green;
+		width: 40px;
+		height: 20px;
+	}
+	#op2 {
+		opacity: 0.2;
+	}
+	#op4 {
+		opacity: 0.4;
+	}
+	#op8 {
+		opacity: 0.8;
+	}
+	
+@media only screen and (min-width: 320px) {
+	.grid {
+			grid-template-columns: 100%;
+		}
+		
+	.protocol {
+			grid-template-columns: 100%;
+		}
+		
+}
+
+@media only screen and (min-width: 768px) {
+		.grid {
+			grid-template-columns: repeat(2, 50%);
+		}
+		
+		.protocol {
+			grid-template-columns: 100%;
+		}
+}
+
+@media only screen and (min-width: 1024px) {
+	.grid {
+			grid-template-columns: repeat(3, 33%);
+		}
+	.protocol {
+			grid-template-columns: repeat(2, 50%);
+		}
+}

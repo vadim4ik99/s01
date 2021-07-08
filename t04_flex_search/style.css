@@ -1,0 +1,11 @@
+form {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.inpt {
+	width: calc(100% - 42px);
+}
+.inpt input {
+	width: 100%;
+}
